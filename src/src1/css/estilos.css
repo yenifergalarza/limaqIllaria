@@ -1,0 +1,546 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url(../css/fontello.css);
+@import url(../css/menu.css);
+@import url(../css/blog.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Thasadith', sans-serif;
+}
+
+.contenedor{
+    width: 98%;
+    margin: auto;
+}
+h1{
+    float: left;
+}
+header .contenedor{
+    display: table;
+
+}
+section{
+    width: 100%;
+    margin-bottom: 05px;
+    height: 100%;
+    
+}
+
+#Bienvenidos{
+    text-align: center;
+    justify-content: center;
+    background-color: #99CC33;
+}
+ #Bienvenidos .contenedor{
+    margin: 2px;
+    width: 100vw;
+ }
+/* banner */
+
+#banner{
+margin-top: 55px;
+margin-bottom: 0;
+position: relative;
+}
+#banner img{
+    padding-top: 2.5em;
+    width: 100vw;
+    height: auto;
+}
+#banner .contenedor{
+  padding-top: 36%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: #fff;
+  text-shadow: 4px 0 0 #000000, -2px 0 0 #000000, 0 2px 0 #000000, 0 -2px 0 #000000, 1px 1px #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000;
+}}
+  #banner a{
+   margin: solid #666633;
+  }
+
+#banner h2{
+    font-size: 30px;
+}
+#Bienvenidos a{
+    display: flex;
+    justify-content: center;
+    display: block;
+    width: 170px;
+    height: 52px;
+    color:#fff;
+    text-decoration: none;
+    padding: 5px;
+    margin-top:10px;
+    margin-left: 85%;
+    border:3px solid #fff;
+    font-size: 26px; 
+}
+#banner a:hover {
+    background: rgba(51,51,51, 0.5);
+}
+@media(min-width:480px){
+    #banner h2 {
+        font-size: 60px;
+    }
+  
+
+}
+
+@media (min-width:768px){
+    #banner{
+        height: 100%;
+        width: auto;
+        overflow: hidden;
+    }
+
+    #banner img {
+        height: auto;
+        margin-top:-100px;
+    }
+
+}
+@media (min-width:1024px){
+    #banner img{
+        height: 100%;
+        margin-top : -200px;
+    }
+
+
+}
+
+
+
+/* info css */
+#info{
+    background:  #99CC33;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+#info .contenedor{
+    position: inherit;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.info-pet{
+    margin:20px;
+
+}
+
+.info-pet img{
+width: 180px;
+height: 180px;
+border-radius: 50%;
+border: 7px solid #fff;
+
+}
+
+@media (min-width:480px){
+    .info-pet{
+        width: 40%;
+    }
+}
+@media (min-width:1024px){
+    .info-pet{
+        width: auto;
+    }
+}
+
+/* footer*/
+footer .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.copy{
+    font-size: 20px;
+}
+
+.sociales{
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+.sociales a{
+    color: #333;
+    text-decoration: none;
+}
+@media(min-width:778px){
+    .sociales{width:auto}
+    footer.contenedor{
+        justify-content: space-between;
+    }
+}
+@media(min-width:1024px){
+    .contenedor{
+        width: 1000px;
+        text-align: center;
+    }
+
+}
+
+#mapa { height: 600px; }
+.imageMap{
+  height: 50px;
+}
+
+.logoname{
+  height: 75px;
+  width: auto;
+}
+header{
+    width: 100%;
+    height: 80px;
+    background-color:  #ffffe6;
+    color: #000000;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+#chatbot{
+    justify-content: end;
+    display: block;
+    width: 100px;
+    color: #666633;
+    text-decoration: none;
+    padding: 7px;
+    margin-top: 10px;
+    border: 3px solid #99CC33;
+    text-align: center;
+    margin-left: 50%;
+    padding-left: 0px
+}
+.acerca-de-intro {
+    background: #2bb573;
+    position: relative;
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 100vh;
+  }
+  
+  .other {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .other svg {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .curve-container {
+    position: absolute;
+    bottom: -5px;
+    width: 100%;
+  }
+  
+  .other-container {
+    height: 1000px;
+  }
+  
+  .seccion-principal {
+    background: #2bb573;
+  
+  }
+  
+  .ad-intro-title {
+    color: #fff;
+    font-size: calc(1em + 3vw);
+    font-family: Montserrat;
+    font-weight: 700;
+  }
+  
+  .ad-intro-text {
+    color: #fff;
+    font-size: calc(1em + .4vw);
+  }
+  
+  .ad-intro-img {
+    max-height: 119px;
+  }
+  
+  /*acerca-de.html*/
+  
+  .og-titulo {
+    color: #2bb573;
+    font-family: Arvo;
+    font-size: calc(1em + 3vw);
+    font-weight: 600;
+  }
+  
+  .og-lista {
+    color: #124d30;
+    font-family: Montserrat;
+    font-size: calc(1em + .49vw);
+    font-weight: 700;
+  }
+  
+  .og-imagen {
+    width: 30%;
+    max-height: 350px;
+  }
+  
+  .curve-container-2 {
+    position: absolute;
+    top: -2.1vw;
+    width: 100%;
+  }
+  
+  .basura-vs-residuo {
+    background: #2bb573;
+    position: relative;
+  }
+  
+  /*
+  .curve-container-2 {
+    position: absolute;
+    bottom: -5px;
+    width: 100%:
+  }
+  */
+  
+  .bvr-contenido {
+    padding-top: 16vw;
+  }
+  
+  .bvr-titulo {
+    color: #fff;
+    font-family: Arvo;
+    font-size: calc(1em + 3vw);
+    font-weight: 700;
+  }
+  
+  .bvr-texto {
+    color: #fff;
+    font-family: Montserrat;
+    font-size: calc(1em + .5vw);
+    font-weight: 700;
+  }
+  
+  .bvr-vs {
+    color: #fff;
+    font-family: Arvo;
+    font-size: calc(1em + 3vw);
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  /*General rules for overwritting*/
+  
+  .zw-no-p {
+    padding: 0 !important;
+  }
+  
+  
+  @media only screen and (max-width:47.5em) { 
+    .acerca-de-intro {
+      height: auto;
+    }
+    
+      
+    .tp-titulo-inverso {
+      display: none;
+  }
+  
+  .tp-titulo-inverso-2 {
+    display: none;
+  }
+  
+  .tp-contenedor-inverso {
+    position: relative;
+    border-top: none;
+    border-bottom: none;
+  }
+    
+    .bvr-separador-1,
+  .bvr-separador-2{
+    display: none;
+  }
+  }
+  
+  /*Basura VS Residuos*/
+  
+  .bvr-separador-1,
+  .bvr-separador-2{
+    width: 100px;
+    height: 10px;
+    background: #bcbdbf;
+  }
+  
+  .bvrc2-titulo {
+    color: #fff;
+    font-family: Arvo;
+    font-size: calc(1em + 1.5vw);
+  }
+  
+  .bvrc2-texto {
+    color: #fff;
+    font-family: Arvo;
+    font-size: calc(1em + .8vw);
+    font-weight: 700;
+  }
+  
+  
+  .bvrc3-titulo {
+    color: #fff;
+    font-family: Arvo;
+    font-size: calc(1em + 3vw);
+  }
+  
+  .bvrc3-lista {
+    color: #fff;
+    font-family: Arvo;
+    font-size: calc(1em + .6vw);
+  }
+  
+  .bvrc3-numero {
+    color: #fff;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: calc(1em + 6vw);
+  }
+  
+  .bvrc3-titulo-2 {
+    color: #fff;
+    font-family: Arvo;
+    font-size: calc(1em + 1vw);
+  }
+  
+  .bvrc2-imagen {
+    width: 80%;
+  }
+  
+  /*Auditoria Residuos*/
+  
+  .ar-imagen {
+    width: 35%;
+  }
+  
+  .ar-titulo, 
+  .tp-titulo-principal {
+    color: #2bb573;
+    font-family: Arvo;
+    font-size: calc(1em + 3vw);
+    font-weight: 700;
+  }
+  
+  .ar-titulo:after {
+    content: "-Elica, 2018";
+    display: block;
+    color: #bcbdbf;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-top: 5px;
+  }
+  
+  /*Tabla de prioridades*/
+  
+  .tp-texto-principal {
+    font-size: calc(1em + .6vw);
+    color: #bcbdbf;
+    font-family: Montserrat;
+  }
+  
+  .tp-titulo {
+    color: #fff;
+    font-family: Arvo;
+    font-size: calc(1em + 3vw);
+  }
+  
+  .tp-texto {
+    color: #fff;
+    font-family: Montserrat;
+    font-size: calc(1em + .4vw);
+  }
+  
+
+  .tp-imagen {
+    width: auto;
+    height: 64px;
+  }
+  
+  .tp-cuadro-1 {
+    background: #516e16f7;
+  }
+  
+  .tp-cuadro-2 {
+    background: #698f1cf7;
+  }
+  
+  .tp-cuadro-3 {
+    background: #85b426f7;
+  }
+  
+  .tp-cuadro-4 {
+    background: #99CC33;
+  }
+  
+  .tp-cuadro-5 {
+    background: #bcbdbf;
+  } 
+      
+  .tp-titulo-inverso {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+    position: absolute;
+    top: 17%;
+    left: 0;
+    color: #2bb573;
+    font-family: Montserrat;
+    font-size: calc(1em + 1.5vw);
+  }
+  
+  .tp-titulo-inverso-2 {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+    position: absolute;
+    top: 66%;
+    left: 16%;
+    color: #2bb573;
+    font-family: Montserrat;
+    font-size: calc(1em + 1.5vw);
+  }
+  
+  .tp-contenedor-inverso {
+    position: relative;
+    border-top: solid 6px #bcbdbf;
+    border-bottom: solid 6px #bcbdbf;
+  }
+  
+  @media only screen and (max-width:61.9375em) { 
+      .bvrc2-imagen {
+    width: 50%;
+  }
+  
+  }
+  form {
+    padding: 9%;
+    padding-left: 36%;
+}
+
+
+.wordWhite{
+  font-size: 24px;
+}
+
+#demo{
+  margin-top: 9%;
+  margin-left: 26%;
+  font-size: 24px;
+}

@@ -1,0 +1,31 @@
+html, body {
+  background-color: #fafafa;  
+
+}
+
+
+  
+ 	#avatar-canvas-div {
+		        width: 100%;
+				text-align:center;
+	}
+	
+
+	#avatar-canvas {
+		     display: inline;
+	}
+
+a {
+  color: #00B7FF;
+}
+.card{
+
+	top: 20%;
+	position: absolute;
+	width: 50vw;
+	height: 39vh;
+
+}
+.chatbot{
+	padding: 20%;
+}

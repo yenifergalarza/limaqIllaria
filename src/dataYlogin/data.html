@@ -1,0 +1,260 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Plataforma</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+    crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+  
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.3/leaflet.css">
+	<link rel="stylesheet" href="mapa.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.3/leaflet.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.0/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.0.0/dist/leaflet.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Bitter:400,700|Open+Sans:300,400,600" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+    crossorigin="anonymous">
+   
+   <link rel="stylesheet" href="css/estilos.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+
+	<script src="js/jquery-3.2.1.js"></script>
+	<script src="js/script.js"></script>
+</head>
+
+<body>
+  <main class="container-fluid">
+    <section class="marg font">
+      <!--Barra de Navegación-->
+      <div class="wrapper">
+        <nav id="sidebar">
+          <div class="sidebar-header">
+            <img src="../dataYlogin/img/logoname.png" class="logo">
+          </div>
+          <ul class="list-unstyled components">
+            <li id="opcion1">
+              <a>Verifica según la Ley de plásticos</a>
+            </li>
+            <li id="opcion2">
+              <a>Canjea beneficios</a>
+            </li>
+            <li class="active">
+              <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" id="opcion3">Descubre Negocios</a>
+              <ul class="collapse list-unstyled" id="homeSubmenu">
+                <li>
+                  <a  id="lima">Descubre negocios en Lima</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div id="content">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <button type="button" id="sidebarCollapse" class="navbar-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-align-justify"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#"> <i class="far fa-grin"></i> Administrador </a>
+                    
+                  </li>
+                  <li class="nav-item active"><a href="../dataYlogin/index.html" class="btn btn-primary"> Cerrar sesión</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!-- Pantalla que se muestra al entrar-->
+          <section id="screens" class="jumbotron">
+            <div class="row">
+              <section id="contenedorInicio">
+                <div class="col-12 p-3">
+                  <h4 class="title">Genera el cambio</h4>
+                </div>
+                <div id="demo" class="col-12 col-md-6"><span>
+                    <p class="size inline user p-3">Bienvenido</p>
+                  </span>
+                  <h4 class="inline">Empresa <br> activa</h4>
+                </div>
+                <div class="col-12 col-md-6">
+                  <h2 class="inline p-3 ">🌱</h2>
+                  <h2 class="inline">Vuélvete ecoResponsable</h2>
+                </div>
+                <div class="col-12 col-md-3 pt-5">
+                  <h5 class="size per">100%</h5>
+                  <p>De empresas cubiertas</p>
+                </div>
+                <div class="col-12 col-md-3 pt-5">
+                  <h5 class="size per">¿Tu empresa es ecoamigable </h5>
+                  <p>Descúbrelo en la opcion 1</p>
+                </div>
+                <div class="col-12 col-md-3 pt-5">
+                  <h5 class="size per">Consigue Beneficios</h5>
+                  <p>Descuentos </p>
+                </div>
+                <div class="col-12 col-md-3 pt-5">
+                  <h5 class="size per">Canjea tus beneficios</h5>
+                  <p>opcion 2</p>
+                </div>
+            </div>
+
+            <div class="hidden" id="mapaVista">
+ <div class="wrap">
+                  <h1>Encuentra tu proveedor ecoAmigable</h1>
+                  <div class="store-wrapper">
+                    <div class="category_list">
+                      <a href="#" class="category_item" category="all">Todo</a>
+                      <a href="#" class="category_item" category="servicios">servicios</a>
+                      <a href="#" class="category_item" category="higiene">higiene</a>
+                      <a href="#" class="category_item" category="alimentos">alimentos</a>
+                      <a href="#" class="category_item" category="tiendas">tiendas</a>
+                      <a href="#" class="category_item" category="belleza">belleza</a>
+                    </div>
+                    <section class="products-list">
+                      <div class="product-item" category="belleza">
+                        <img src='../dataYlogin/images/Shiwi.png'alt="" >
+                        <a href="#">Shiwi</a>
+                      </div>
+                      <div class="product-item" category="higiene">
+                        <img src='../dataYlogin/images/dragóndeagua.png' alt="" >
+                        <a href="#">dragóndeagua</a>
+                      </div>
+                      <div class="product-item" category="alimentos">
+                        <img src='../dataYlogin/images/alimentos/AGROBOSQUE.png' alt="" >
+                        <a href="#">AgroBosque</a>
+                      </div>
+                      <div class="product-item" category="alimentos">
+                        <img src='../dataYlogin/images/alimentos/ALLY.png' alt="" >
+                        <a href="#">Ally </a>
+                      </div>
+                      <div class="product-item" category="servicios">
+                        <img src='../dataYlogin/images/ALGAEX.png' alt="" >
+                        <a href="#">Algaex</a>
+                      </div>
+                      <div class="product-item" category="servicios">
+                        <img src='../dataYlogin/images/GREENN.png' alt="" >
+                        <a href="#">Greenn</a>
+                      </div>
+                      <div class="product-item" category="tiendas">
+                        <img src='../dataYlogin/images/tiendas/EVEA.png' alt="" >
+                        <a href="#">Evea</a>
+                      </div>
+                      <div class="product-item" category="belleza">
+                        <img src='../dataYlogin/images/global corp.png'alt="" >
+                        <a href="#">GlobalBeautyCorp </a>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+                <div id="mapa"></div>
+              	
+               </div>
+               <div class="hidden" id="contenedorInput">
+                 <h1>Ingrese el código que fue enviado a tu correo</h1>
+                <label>
+                  que fue enviada a tu correo al haber termino toda el cuestionario de la Ley de plásticos</span>
+                </label>
+                <input type="text" required>
+                <button id="reclamaBeneficio" class="btn btn-primary "> reclama tu beneficio</button>
+                <div id="beneficio"></div>
+              </div> 
+  
+              <div class="hidden" id="cuestionario">
+                 
+                      <article>
+                          <form id="form1" name="form1" method="post" action="#">
+                              <div class="container">
+                                <h1>¿Que tan ecoAmigable es tu empresa? </br><span class="cursiva">Según la  Ley de plásticos (Nº 30884)</span> </h1>
+                               
+                                <p class="wordWhite">Utilizas bolsas de base polimérica, sorbetes y envases de tecnopor en tu empresa o servicio.
+                                  </p>
+                        
+                                <input type="radio" name="question1" value="0" id="q1">
+                                <label for="q1" class="wordWhite">No</label>
+                                <input type="radio" name="question1" value="1" class="wordWhite" id="q2">
+                                <label for="q2" class="wordWhite">A veces</label>
+                                <input type="radio" name="question1" value="2" class="wordWhite" id="q3">
+                                <label for="q3" class="wordWhite">Si</label>
+                        
+                              </div>
+                              <div class="container">
+                                <p class="wordWhite">Utilizas bolsas plásticas que no sean reutilizables y aquellas cuya degradación generen contaminación por microplástico.</p>
+                        
+                                <input type="radio" name="question2" value="2" id="q4">
+                                <label for="q4" class="wordWhite">Si</label>
+                                <input type="radio" name="question2" value="1" id="q5">
+                                <label for="q5" class="wordWhite">A veces</label>
+                                <input type="radio" name="question2" value="0" id="q6">
+                                <label for="q6" class="wordWhite">No</label>
+                              </div>
+                              <div class="container">
+                                <p class="wordWhite"> Utilizas envases y vajilla descartable de base polimérica cuya degradación genere contaminación por microplástico.</p>
+                        
+                                <input type="radio" name="question3" value="1" id="q7">
+                                <label for="q7" class="wordWhite">A veces</label>
+                                <input type="radio" name="question3" value="2" id="q8">
+                                <label for="q8" class="wordWhite">Si</label>
+                                <input type="radio" name="question3" value="0" id="q9">
+                                <label for="q9" class="wordWhite">No</label>
+                             
+                              </div>
+                            <p id="demo"></p>
+                            </form>  
+                              <form role="form">
+                                      <label  class="textGreen"for="photo">Para poder verificar ,que las acciones se cumplireron a su totalidad ,ingrese el documento correspondiente que serra corroborado por el MINAM para su veracidad y generación posterior de codigo</label>
+                                      <div class="drag-drop">
+                                      <input type="file" multiple="multiple" id="photo" />
+                                      </div>
+                                      <button  class="btn btn-primary " onClick="conteo();">Enviar</button>
+                                      <button type="reset" class="btn btn-default">Cancelar</button>
+                                      </form>
+                          </article>
+              </div>
+      </div>
+
+    </section>
+
+
+
+
+
+  </main>
+
+  <!-- jQuery CDN - Slim version (=without AJAX) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <!-- Popper.JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar').toggleClass('active');
+        $(this).toggleClass('active');
+      });
+    });
+
+  </script>
+  <script src="data.js"></script>
+  <script src="mapa.js"></script>
+   <script src="puntosconsumidor.js"></script>
+ 
+</body>
+
+</html>

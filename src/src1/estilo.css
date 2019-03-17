@@ -1,0 +1,305 @@
+.acerca-de-intro {
+    background: #2bb573;
+    position: relative;
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 100vh;
+  }
+  
+  .other {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .other svg {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .curve-container {
+    position: absolute;
+    bottom: -5px;
+    width: 100%;
+  }
+  
+  .other-container {
+    height: 1000px;
+  }
+  
+  .seccion-principal {
+    background: #2bb573;
+  
+  }
+  
+  .ad-intro-title {
+    color: #fff;
+    font-size: calc(1em + 3vw);
+    font-family: Montserrat;
+    font-weight: 700;
+  }
+  
+  .ad-intro-text {
+    color: #fff;
+    font-size: calc(1em + .4vw);
+  }
+  
+  .ad-intro-img {
+    max-height: 119px;
+  }
+  
+  /*acerca-de.html*/
+  
+  .og-titulo {
+    color: #2bb573;
+    font-family: Arvo;
+    font-size: calc(1em + 3vw);
+    font-weight: 600;
+  }
+  
+  .og-lista {
+    color: #124d30;
+    font-family: Montserrat;
+    font-size: calc(1em + .49vw);
+    font-weight: 700;
+  }
+  
+  .og-imagen {
+    width: 30%;
+    max-height: 350px;
+  }
+  
+  .curve-container-2 {
+    position: absolute;
+    top: -2.1vw;
+    width: 100%;
+  }
+  
+  .basura-vs-residuo {
+    background: #2bb573;
+    position: relative;
+  }
+  
+  /*
+  .curve-container-2 {
+    position: absolute;
+    bottom: -5px;
+    width: 100%:
+  }
+  */
+  
+  .bvr-contenido {
+    padding-top: 16vw;
+  }
+  
+  .bvr-titulo {
+    color: #fff;
+    font-family: Arvo;
+    font-size: calc(1em + 3vw);
+    font-weight: 700;
+  }
+  
+  .bvr-texto {
+    color: #fff;
+    font-family: Montserrat;
+    font-size: calc(1em + .5vw);
+    font-weight: 700;
+  }
+  
+  .bvr-vs {
+    color: #fff;
+    font-family: Arvo;
+    font-size: calc(1em + 3vw);
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  /*General rules for overwritting*/
+  
+  .zw-no-p {
+    padding: 0 !important;
+  }
+  
+  
+  @media only screen and (max-width:47.5em) { 
+    .acerca-de-intro {
+      height: auto;
+    }
+    
+      
+    .tp-titulo-inverso {
+      display: none;
+  }
+  
+  .tp-titulo-inverso-2 {
+    display: none;
+  }
+  
+  .tp-contenedor-inverso {
+    position: relative;
+    border-top: none;
+    border-bottom: none;
+  }
+    
+    .bvr-separador-1,
+  .bvr-separador-2{
+    display: none;
+  }
+  }
+  
+  /*Basura VS Residuos*/
+  
+  .bvr-separador-1,
+  .bvr-separador-2{
+    width: 100px;
+    height: 10px;
+    background: #bcbdbf;
+  }
+  
+  .bvrc2-titulo {
+    color: #fff;
+    font-family: Arvo;
+    font-size: calc(1em + 1.5vw);
+  }
+  
+  .bvrc2-texto {
+    color: #fff;
+    font-family: Arvo;
+    font-size: calc(1em + .8vw);
+    font-weight: 700;
+  }
+  
+  
+  .bvrc3-titulo {
+    color: #fff;
+    font-family: Arvo;
+    font-size: calc(1em + 3vw);
+  }
+  
+  .bvrc3-lista {
+    color: #fff;
+    font-family: Arvo;
+    font-size: calc(1em + .6vw);
+  }
+  
+  .bvrc3-numero {
+    color: #fff;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: calc(1em + 6vw);
+  }
+  
+  .bvrc3-titulo-2 {
+    color: #fff;
+    font-family: Arvo;
+    font-size: calc(1em + 1vw);
+  }
+  
+  .bvrc2-imagen {
+    width: 80%;
+  }
+  
+  /*Auditoria Residuos*/
+  
+  .ar-imagen {
+    width: 35%;
+  }
+  
+  .ar-titulo, 
+  .tp-titulo-principal {
+    color: #2bb573;
+    font-family: Arvo;
+    font-size: calc(1em + 3vw);
+    font-weight: 700;
+  }
+  
+  .ar-titulo:after {
+    content: "-Elica, 2018";
+    display: block;
+    color: #bcbdbf;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-top: 5px;
+  }
+  
+  /*Tabla de prioridades*/
+  
+  .tp-texto-principal {
+    font-size: calc(1em + .6vw);
+    color: #bcbdbf;
+    font-family: Montserrat;
+  }
+  
+  .tp-titulo {
+  color: #fff;
+    font-family: 'thasadith',sans-serif;
+    font-size: calc(1em + 3vw);
+  }
+  
+  .tp-texto {
+    color: #fff;
+    font-family: 'thasadith',sans-serif;
+    font-size: calc(1em + .4vw);
+  }
+  
+  
+  
+  .tp-cuadro-1 {
+    background: rgba(43, 181, 115, 1);
+  }
+  
+  .tp-cuadro-2 {
+    background: rgba(43, 181, 115, 0.85);
+  }
+  
+  .tp-cuadro-3 {
+    background: rgba(43, 181, 115, 0.7);
+  }
+  
+  .tp-cuadro-4 {
+    background: rgba(43, 181, 115, 0.55);
+  }
+  
+  .tp-cuadro-5 {
+    background: #bcbdbf;
+  } 
+      
+  .tp-titulo-inverso {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+    position: absolute;
+    top: 17%;
+    left: 0;
+    color: #2bb573;
+    font-family: Montserrat;
+    font-size: calc(1em + 1.5vw);
+  }
+  
+  .tp-titulo-inverso-2 {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+    position: absolute;
+    top: 66%;
+    left: 16%;
+    color: #2bb573;
+    font-family: Montserrat;
+    font-size: calc(1em + 1.5vw);
+  }
+  
+  .tp-contenedor-inverso {
+    position: relative;
+    border-top: solid 6px #bcbdbf;
+    border-bottom: solid 6px #bcbdbf;
+  }
+  
+  @media only screen and (max-width:61.9375em) { 
+      .bvrc2-imagen {
+    width: 50%;
+  }
+  
+  }
