@@ -1,5 +1,7 @@
-
-  #mapa { height: 550px; position:  !important;}
+#mapa {
+  height: 550px;
+  position: sticky !important;
+}
   .imageMap{
     height: 50px;
   }

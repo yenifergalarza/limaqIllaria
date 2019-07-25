@@ -29,7 +29,7 @@
 
 
 /* Menú */
-=======
+
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 body {
     font-family: 'Thasadith', sans-serif;
@@ -273,16 +273,16 @@ ul.CTAs a {
  display: inline;
 }
 
-.aButton{
+.aButton {
     color: #fff;
     background: rgb(128, 175, 34);
     padding: 3%;
-    margin-left: 46%;
+    margin-left: 40%;
 }
-.izquierda{
-    margin-left: 30%;
+.izquierda {
+    margin-left: 41%;
 }
-}
+
 .card{
 top: 60%;
 position: fixed;
